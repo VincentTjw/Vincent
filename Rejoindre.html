@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Voir le japon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+          integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+<header id="header">
+    <div class="site-brand">
+        <img id="logo-japon" alt="logo japon" src="Image/icon-japan.png" height="512" width="512"/>    </div>
+    <nav class="navbar">
+        <ul>
+            <li>
+                <a id="Home-btn" href="index.html"><i class="fas fa-home"></i>Accueil</a>
+            </li>
+            <li>
+                <a href="Rejoindre.html">Nous rejoindre</a>
+            </li>
+            <li>
+                <a href="Contact.html">Contact</a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+<main>
+    <section id="join-form">
+        <div class="container">
+            <span>Pour nous rejoindre :</span>
+            <p>Si vous voulez aider au développement de ce site, tout en ayant les informations en premier, vous pouvez
+                nous rejoindre. Pour ce faire il faut remplir ce formulaire ! </p>
+            <form action="?" method="POST" enctype="multipart/form-data">
+                <p>Mon formulaire</p>
+                <p>
+                    <label for="first_name">Prénom</label>
+                    <input type="text"
+                           maxlength="255"
+                           placeholder="Harry"
+                           id="first_name"
+                           value=""
+                           class="form-control"
+                           required>
+                </p>
+                <p>
+                    <label for="last_name">Nom</label>
+                    <input type="text"
+                           maxlength="255"
+                           placeholder="Potter"
+                           id="last_name"
+                           value=""
+                           class="form-control"
+                           required>
+                </p>
+                <p>
+                    <label for="tel">Téléphone</label>
+                    <input type="tel"
+                           id="tel"
+                           name="tel"
+                           class="form-control"
+                           required>
+                </p>
+                <p>
+                    <label for="email">Email</label>
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           class="form-control"
+                           required>
+                </p>
+                <p>
+                    <label for="date">Date de naissance</label>
+                    <input type="date"
+                           id="date"
+                           class="form-control"
+                           required>
+                </p>
+                <p>
+                    <input type="checkbox"
+                           id="check_1"
+                           name="checkbox">
+                    <label for="check_1">J'accepte de recevoir la newsletter</label>
+
+                </p>
+                <p>
+                    <input type="checkbox"
+                           id="check_2"
+                           name="checkbox"
+                           required>
+                    <label for="check_2">J'accepte les conditions générales et la politique de confidentialité</label>
+                </p>
+                <button class="btn-form" type="submit">Envoyer</button>
+            </form>
+        </div>
+
+    </section>
+</main>
+<footer id="footer">
+    <div class="container">
+        <p>Vous pouvez nous suivre sur nos réseaux :</p>
+        <ul class="social-links">
+            <li>
+                <a href="#" target="_blank" rel="noopener">
+                    <span class="visually-hidden">Suivez nous sur Instagram</span>
+                    <span class="fab fa-instagram"></span>
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank" rel="noopener">
+                    <span class="visually-hidden">Suivez nous sur twitter</span>
+                    <span class="fab fa-twitter"></span>
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank" rel="noopener">
+                    <span class="visually-hidden">Suivez nous sur facebook</span>
+                    <span class="fab fa-facebook"></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</footer>
+</body>
+
+</html>

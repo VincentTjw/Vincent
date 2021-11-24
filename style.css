@@ -1,0 +1,477 @@
+:root {
+    --primary: #77080d;
+}
+
+body {
+    margin: 0;
+    background-color: #f7f7f7;
+}
+
+#logo-japon {
+    display: block;
+    width: 50px;
+    height: auto;
+}
+
+#header {
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#header .site-brand {
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.navbar {
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+    .navbar {
+        display: block;
+        flex-grow: 1;
+    }
+
+    .navbar ul {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        column-gap: 1rem;
+    }
+
+    .navbar ul li {
+        list-style: none;
+    }
+
+    .navbar ul li a {
+        display: inline-block;
+        border: 1px solid transparent;
+        color: inherit;
+        padding: 0.5rem 1rem;
+        border-radius: 5rem;
+        opacity: 1;
+        transition: .2s ease all;
+    }
+
+    .navbar ul li a:hover {
+        opacity: 0.7;
+        transition: .2s ease all;
+    }
+
+    .navbar ul li:last-child a {
+        background-color: var(--primary);
+        color: #fff;
+        border-color: var(--primary);
+        transition: .2s ease all;
+    }
+
+    .navbar ul li:last-child a:hover {
+        opacity: 1;
+        background-color: transparent;
+        color: var(--primary);
+        transition: .2s ease all;
+    }
+}
+
+/* Home */
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+main {
+    padding-top: 70px;
+}
+
+#join-form {
+    padding: 100px 0;
+}
+
+#home-hero {
+    background-color: #898484;
+    padding: 70px 0;
+    background-position: center;
+    color: var(--primary);
+
+}
+
+@media screen and (min-width: 1200px) {
+
+
+    #banniere_image {
+        margin-top: 15px;
+        height: 200px;
+        border-radius: 5px;
+        background: url("https://cdn.pixabay.com/photo/2016/04/09/02/09/cherry-blossoms-1317308_960_720.jpg");
+        position: relative;
+        box-shadow: 0px 4px 4px;
+        margin-bottom: 25px;
+    }
+
+    #banniere_description {
+        position: absolute;
+        bottom: 0;
+        border-radius: 0px 0px 5px 5px;
+        width: 99.5%;
+        height: 35%;
+        padding-top: 15px;
+        padding-left: 4px;
+
+    }
+
+    .texte_centrer {
+        position: absolute;
+        top: 5%;
+        left: 40%;
+        transform: translate(-50% -50%);
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .card-home {
+        max-width: 350px;
+        width: 100%;
+        text-align: justify;
+        background-color: #fff;
+        border-radius: 1rem;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+        transition: .2s ease-in-out boxshadow;
+        margin-bottom: 15px;
+        padding-top: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 100px;
+    }
+
+    #home-card1 {
+        margin-top: 100px;
+    }
+
+    #home-card2 {
+        margin-top: 100px;
+    }
+    #home-card3 {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .card-home span {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+
+    .card-img {
+        max-width: 350px;
+        width: 100%;
+        text-align: center;
+        background-color: inherit;
+
+    }
+
+    .card-img img {
+        width: 150%;
+        height: auto;
+        display: block;
+        margin: 0 auto 1rem;
+        border-radius: 0.5rem;
+    }
+
+}
+/* Rejoindre */
+
+#join-form {
+    padding: 100px 0;
+}
+
+#join-form span {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+#join-form form {
+    padding: 1rem;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    border-radius: 1rem;
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+@media screen and (min-width: 1200px) {
+    #join-form form
+
+
+}
+
+.form-control {
+    border: 1px solid #2e2e2e;
+    border-radius: 5px;
+    width: 100%;
+
+    padding: 0.5rem 0.75rem;
+}
+
+#join-form form p:first-child {
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn-form {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Contact */
+
+
+#contact-cards {
+    padding: 100px 0;
+}
+
+.card {
+    max-width: 350px;
+    width: 100%;
+    align-content: center;
+    background-color: #fff;
+
+}
+
+.card img {
+    width: 150%;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.card span {
+    font-weight: bold;
+    font-size: 130%;
+}
+
+.card p {
+    margin-bottom: 0;
+}
+
+#contact-cards .card:last-child {
+    display: block;
+    align-content: center;
+    padding-top: 4rem;
+    background-color: inherit;
+}
+
+/* Footer
+
+ */
+#footer {
+    background-color: #2e2e2e;
+    color: #fff;
+    padding: 50px;
+
+
+}
+
+#footer p {
+    max-width: 500px;
+}
+
+#footer-contact {
+    background-color: #2e2e2e;
+    color: #fff;
+    padding: 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+
+/*
+Social link
+ */
+
+.social-links {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    column-gap: 1rem;
+}
+
+.social-links li a {
+    font-size: 2rem;
+    color: inherit;
+    text-decoration: none;
+    transition: .2s ease color;
+}
+
+.social-links li a :hover {
+    color: var(--primary);
+}
+
+.social-links li a span.visually-hidden {
+    display: none;
+}
+
+/* Button */
+
+.btn {
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    font-size: 1rem;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 5rem;
+    transform: scale(1);
+    transition: .2s linear transform;
+}
+
+.btn:hover{
+    transform: scale(0.95);
+    transition: .2s linear transform;
+}
+
+.btn-outline-white {
+    border-color: #fff;
+    background-color: var(--primary);
+    color: #fff;
+    margin-top: 2rem;
+}
+
+/* Nourriture */
+
+#food h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+#food span {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+#food p {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 50px;
+
+
+}
+.centre {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.img-food {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem;
+}
+.img-food :last-child {
+    width: 100%;
+    height: auto;
+}
+
+/* Tourisme*/
+
+#tourism h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+#tourism span {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+#tourism p {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+.img-tourism {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem;
+}
+.img-tourism :first-child {
+    width: 100%;
+    height: auto;
+
+}
+
+/* History */
+
+#history h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+#history span {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+#history p {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+.img-history {
+    width: 40%;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem;
+}
+.img-history :first-child {
+    width: 100%;
+    height: auto;
+
+}
+
+.img-history :nth-child(2) {
+    width: 50%;
+    height: auto;
+
+}
